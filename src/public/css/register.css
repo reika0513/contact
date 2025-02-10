@@ -1,0 +1,37 @@
+.register__content{
+    background-color: #F1ECE7;
+}
+
+.register__heading{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    background-color: #FFFFFF;
+}
+
+.form_group {
+    display: flex;
+    justify-content: center;
+}
+
+.form_labele{
+    font-size: 25px;
+}
+
+.form__button {
+    display: flex;
+    justify-content: center;
+    padding: 10px, 40px;
+}
+
+.form__button-submit {
+    width: 120px;
+    height: 46px;
+    font-size: 20px;
+    background-color: #82756A;
+    color: #ffffff;
+    border: none;
+}

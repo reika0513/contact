@@ -1,0 +1,19 @@
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.header_inner {
+    max-width: 1512px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.header_loge{
+    text-decoration: none;
+    color: hsl(28, 14%, 48%);
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+}

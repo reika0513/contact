@@ -1,0 +1,41 @@
+.confirm__content {
+    color: #8B7969;
+    width: 972px;
+    margin: 0 auto;
+}
+
+.confirm__heading {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    justify-content: center;
+}
+
+.confirm-table {
+    display: flex;
+    justify-content: center;
+}
+
+.form__button {
+    display: flex;
+    justify-content: center;
+}
+
+.form__button-submit {
+    width: 120px;
+    height: 42px;
+    font-size: 20px;
+    background-color: #82756A;
+    color: #ffffff;
+    border: none;
+}
+
+.form__button-back{
+    border: none;
+    text-decoration-line: underline;
+    background-color: #E0DFDE;
+    color: hsl(28, 14%, 48%);
+}

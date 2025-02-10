@@ -1,0 +1,26 @@
+.login__content{
+    background-color: #F1ECE7;
+}
+
+.form{
+    background-color: #FFFFFF;
+}
+
+.form_group{
+    display: flex;
+    justify-content: center;
+}
+
+.form__button {
+    display: flex;
+    justify-content: center;
+}
+
+.form__button-submit {
+    width: 120px;
+    height: 46px;
+    font-size: 20px;
+    background-color: #82756A;
+    color: #ffffff;
+    border: none;
+}

@@ -1,0 +1,61 @@
+.contact__content {
+    color: #8B7969;
+    width: 972px;
+    margin: 0 auto;
+}
+
+.contact__heading {
+    height: 46px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    justify-content: center;
+}
+
+.form_frame{
+    justify-content: center;
+}
+
+.form_group {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.form_error {
+    color: rgb(220, 0, 0);
+}
+
+.form_labele--item {
+    font-size: 20px;
+}
+
+.form__label--required {
+    font-size: 20px;
+    color: red;
+}
+
+.form_group-text {
+    font-size: 14px;
+}
+
+.form_group-text_gender {
+    font-size: 18px;
+}
+
+.form__button {
+    display: flex;
+    justify-content: center;
+}
+
+.form__button-submit {
+    width: 160px;
+    height: 46px;
+    font-size: 20px;
+    background-color: #82756A;
+    color: #ffffff;
+    border: none;
+}
