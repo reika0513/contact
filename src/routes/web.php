@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route ::get('/', [ContactController::class, 'index']);
+Route ::post('/confirm', [ContactController::class, 'confirm']);
+Route ::post('/thanks', [ContactController::class, 'store']);
+
+Route ::get('/register', [ContactController::class, 'register']);
+Route ::post('/login', [ContactController::class, '']);
+Route ::post('/', [ContactController::class, 'login']);
+//ログイン後は管理画面に遷移できるようにする
