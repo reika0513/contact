@@ -24,37 +24,42 @@
             <div class="form_frame">
                 <div class="form_group">
                     <div class="form_group-title">
-                        <span class="form_labele--item">お名前</span>
+                        <span class="form_label--item">お名前</span>
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form_group-content">
                         <div class="form_group-text">
-                            <input type="text" name="first_name"placeholder="例: 山田"/>
-                            <input type="text" name="last_name" placeholder="例: 太郎"/>
-                        </div>
+                            <input class="form_group-text_name" type="text" name="first_name"placeholder="例: 山田"/>
+                            <input class="form_group-text_name" type="text" name="last_name" placeholder="例: 太郎"/>
+                        </div> 
                         <div class="form_error">
+                            <span class="form_error-first">
                             @error('first_name')
-                            {{ $message }} 
-                            @enderror
+                            {{ $message }}
+                            @enderror 
+                            </span>
+                            <span class="form_error-last">
                             @error('last_name')
                             {{ $message }} 
-                            @enderror                        
+                            @enderror
+                            </span>              
                         </div>
+                        
                     </div>
                 </div>
                 <div class="form_group">
                     <div class="form_group-title">
-                        <span class="form_labele--item">性別</span>
+                        <span class="form_label--item">性別</span>
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form_group-content">
                         <div class="form_group-text_gender">
                             <input type="radio" name="gender" value="1" checked="checked">
-                            <label for="men" name="gender" value="男性">男性</label>
+                            <label class="form_group-text_gender-label" for="men" name="gender" value="男性">男性</label>
                             <input type="radio" name="gender" value="2">
-                            <label for="women" name="gender" value="女性">女性</label>
+                            <label class="form_group-text_gender-label" for="women" name="gender" value="女性">女性</label>
                             <input type="radio" name="gender" value="3">
-                            <label for="non" name="gender" value="その他">その他</label>      
+                            <label class="form_group-text_gender-label" for="non" name="gender" value="その他">その他</label>      
                         </div>
                         <div class="form_error">
                             @error('gender')
@@ -65,12 +70,12 @@
                 </div>
                 <div class="form_group">
                     <div class="form_group-title">
-                        <span class="form_labele--item">メールアドレス</span>
+                        <span class="form_label--item">メールアドレス</span>
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form_group-content">
                         <div class="form_group-text">
-                            <input type="email" name="email" placeholder="例: test@example.com"/>
+                            <input class="form_group-text_email" type="email" name="email" placeholder="例: test@example.com"/>
                         </div>
                         <div class="form_error">
                             @error('email')
@@ -81,12 +86,12 @@
                 </div>
                 <div class="form_group">
                     <div class="form_group-title">
-                        <span class="form_labele--item">電話番号</span>
+                        <span class="form_label--item">電話番号</span>
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form_group-content">
                         <div class="form_group-text">
-                            <input type="tel" name="tel" placeholder="080-1234-5678"/>
+                            <input class="form_group-text_tel" type="tel" name="tel" placeholder="080-1234-5678"/>
                         </div>
                         <div class="form_error">
                             @error('tel')
@@ -97,12 +102,12 @@
                 </div>
                 <div class="form_group">
                     <div class="form_group-title">
-                        <span class="form_labele--item">住所</span>
+                        <span class="form_label--item">住所</span>
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form_group-content">
                         <div class="form_group-text">
-                            <input type="text" name="address" placeholder="例: 東京都渋谷区千駄ヶ谷1-2-3"/>
+                            <input class="form_group-text_address" type="text" name="address" placeholder="例: 東京都渋谷区千駄ヶ谷1-2-3"/>
                         </div>
                         <div class="form_error">
                             @error('address')
@@ -113,23 +118,23 @@
                 </div>
                 <div class="form_group">
                     <div class="form_group-title">
-                        <span class="form_labele--item">建物名</span>
+                        <span class="form_label--item">建物名</span>
                     </div>
                     <div class="form_group-content">
                         <div class="form_group-text">
-                            <input type="text" name="building_name" placeholder="例: 千駄ヶ谷マンション101"/>
+                            <input class="form_group-text_building" type="text" name="building_name" placeholder="例: 千駄ヶ谷マンション101"/>
                         </div>
                     </div>
                 </div>
                 <div class="form_group">
                     <div class="form_group-title">
-                        <span class="form_labele--item">お問い合わせの種類</span>
+                        <span class="form_label--item">お問い合わせの種類</span>
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form_group-content">
                         <div class="form_group-text">
-                            <select name="categories">
-                                <option value="">--選択してください--</option>
+                            <select class="form_group-text_categories" name="categories">
+                                <option value="" selected>--選択してください--</option>
                                 <option value="1">
                                 <label for="select" value="お届け">商品のお届けについて</label></option>
                                 <option value="2">
@@ -151,12 +156,12 @@
                 </div>
                 <div class="form_group">
                     <div class="form_group-title">
-                        <span class="form_labele--item">お問い合わせ内容</span>
+                        <span class="form_label--item">お問い合わせ内容</span>
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form_group-content">
                         <div class="form_group-text">
-                        <textarea name="content" placeholder="お問い合わせ内容を記載ください"></textarea>
+                        <textarea class="form_group-text_content" name="content" cols="80" rows="6" placeholder="お問い合わせ内容を記載ください"></textarea>
                         </div>
                         <div class="form_error">
                             @error('content')
