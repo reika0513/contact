@@ -5,9 +5,14 @@
 }
 
 .contact__heading {
-    font-size: 35px;
     display: flex;
     justify-content: center;
+}
+
+.contact_heading-logo{
+    font-size: 35px;
+    font-weight: normal;
+    margin: 50px auto;
 }
 
 .form_frame {

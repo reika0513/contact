@@ -24,7 +24,7 @@
         @csrf
         <div class="form_group">
             <div class="form_group-title">
-                <span class="form_labele">お名前</span>
+                <span class="form_label">お名前</span>
             </div>
             <div class="form_group-content">
                 <div class="form_group-text">
@@ -39,7 +39,7 @@
         </div>
         <div class="form_group">
             <div class="form_group-title">
-                <span class="form_labele">メールアドレス</span>
+                <span class="form_label">メールアドレス</span>
             </div>
             <div class="form_group-content">
                 <div class="form_group-text">
@@ -54,11 +54,11 @@
         </div>
         <div class="form_group">
             <div class="form_group-title">
-                <span class="form_labele--item">パスワード</span>
+                <span class="form_label--item">パスワード</span>
             </div>
             <div class="form_group-content">
                 <div class="form_group-text">
-                    <input type="text" name="password"  value="{{ $users['password'] }}" placeholder="例: coachtech1106"/>
+                    <input type="password" name="password"  value="{{ $users['password'] }}" placeholder="例: coachtech1106"/>
                 </div>
                 <div class="form_error">
                     @error('password')

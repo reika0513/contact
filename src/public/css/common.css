@@ -4,18 +4,21 @@
 }
 
 .header_inner {
+    position: relative;
     max-width: 1512px;
-    height: 75px;
+    height: 100px;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid #E0DFDE;
-
+    position: relative;
 }
 
 .header_loge{
+    position: absolute;
     text-decoration: none;
     color: hsl(28, 14%, 48%);
     font-size: 40px;
     font-weight: 400;
-    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
 }
