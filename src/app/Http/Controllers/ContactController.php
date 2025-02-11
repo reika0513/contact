@@ -23,21 +23,4 @@ class ContactController extends Controller
         Contact::create($contact);
         return view('thanks');
     }  
-
-    public function register(){
-        return view('register');
-    }
-
-    public function login(UserRequest $request){
-        $user=$request->only(['name', 'email', 'password']);
-        User::create($user);
-        return view('login');
-    }
-
-    public function logi(UserRequest $request){
-        $user=$request->only(['name', 'password']);
-        return view('index');
-
-    }
-
 }
