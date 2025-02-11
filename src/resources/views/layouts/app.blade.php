@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     @yield('css')
 </head>
-<body style="background:#E0DFDE;">
+<body style="background:#FFFFFF;">
     @yield('header')
     
     <main>

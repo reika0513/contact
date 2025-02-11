@@ -63,7 +63,7 @@
                             <?php if ($contact['categories'] == '1') {echo '商品のお届けについて';} else if ($contact['categories'] == '2') {echo '商品の交換について';} else if ($contact['categories'] == '3') {echo '商品トラブル';} else if ($contact['categories'] == '4') {echo 'ショップへのお問い合わせ';} else if ($contact['categories'] == '5') {echo 'その他';}?>
                         </td>
                     </tr>
-                    <tr class="confirm-table_row">
+                    <tr class="confirm-table_row-content">
                         <th class="confirm-table_header">お問い合わせ内容</th>
                         <td class="confirm-table_text" name="content">{{ $contact['content'] }}
                         </td>

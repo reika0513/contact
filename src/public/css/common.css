@@ -5,9 +5,11 @@
 
 .header_inner {
     max-width: 1512px;
-    height: 100px;
+    height: 75px;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid #E0DFDE;
+
 }
 
 .header_loge{
