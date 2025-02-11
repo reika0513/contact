@@ -2,6 +2,7 @@
     color: #8B7969;
     width: 972px;
     margin: 0 auto;
+    font-size: 20px;
 }
 
 .confirm__heading {
@@ -10,14 +11,33 @@
     justify-content: center;
 }
 
-.form {
-    justify-content: center;
+.confirm-table{
+    height: 606px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.confirm-table {
-    display: flex;
-    justify-content: center;
+.confirm-table_inner {
+
 }
+
+.confirm-table_row{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+}
+
+.confirm-table_header{
+    display: inline-block;
+    width: 400px;
+    font-size: 20px;
+}
+
+
+
 
 .form__button {
     display: flex;
@@ -34,6 +54,8 @@
 }
 
 .form__button-back{
+    width: 120px;
+    height: 42px;
     border: none;
     text-decoration-line: underline;
     background-color: #E0DFDE;
