@@ -37,9 +37,6 @@
 .form_group-title{
     display: inline-block;
     width: 400px;
-}
-
-.form_label--item {
     font-size: 20px;
 }
 
@@ -48,11 +45,7 @@
     color: red;
 }
 
-.form_group-text {
-    font-size: 14px;
-}
-
-.form_group-text_gender {
+.form_group-text_gender, .form_group-text{
     font-size: 18px;
 }
 
@@ -68,6 +61,7 @@ input[type="radio"]{
 
 ::placeholder{
     color: #BEB1A6;
+    font-size: 14px;
 }
 
 select {
